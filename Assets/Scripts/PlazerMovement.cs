@@ -29,8 +29,7 @@ public class PlazerMovement : MonoBehaviour
                 {
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
-            }
-            if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+            }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
                 if (!Physics.CheckBox(movePoint.position + new Vector3(0f, 0f, Input.GetAxisRaw("Vertical")), new Vector3(0.2f, 0.2f, 0.2f), new Quaternion(0f, 0f, 0f, 0f), whatStopsMovement))
                 {

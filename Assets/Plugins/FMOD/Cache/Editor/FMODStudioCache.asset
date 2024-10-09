@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Sfx.bank
   Name: Sfx
   StudioPath: bank:/Sfx
-  lastModified: 638640807658752374
+  lastModified: 638640824590166486
   FileSizes:
   - Name: Desktop
-    Value: 15968
+    Value: 25472
   Exists: 1
+--- !u!114 &-1052982876519717108
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/CoinCollected
+  m_EditorClassIdentifier: 
+  Path: event:/CoinCollected
+  Guid:
+    Data1: 1425338199
+    Data2: 1165172179
+    Data3: -2015333986
+    Data4: 1439697813
+  Banks:
+  - {fileID: -8317918603804052003}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38,12 +65,13 @@ MonoBehaviour:
   - {fileID: -8317918603804052003}
   EditorEvents:
   - {fileID: 484132146035754211}
+  - {fileID: -1052982876519717108}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5496830274024639889}
   StringsBanks:
   - {fileID: 6733699882298954688}
-  cacheTime: 638640807658752374
+  cacheTime: 638640824590166486
   cacheVersion: 131620
 --- !u!114 &484132146035754211
 MonoBehaviour:
@@ -87,7 +115,7 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638640807657644286
+  lastModified: 638640824589717678
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -107,8 +135,8 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638640807657664238
+  lastModified: 638640824589727655
   FileSizes:
   - Name: Desktop
-    Value: 806
+    Value: 862
   Exists: 1

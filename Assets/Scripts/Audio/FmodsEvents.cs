@@ -7,8 +7,8 @@ public class FmodsEvents : MonoBehaviour
 {
     public static FmodsEvents instance {  get; private set; }
 
-    [field: Header("CoindSfx")]
-    [field: SerializeField] public EventReference coincollected {  get; private set; }
+    [field: Header("WallSfx")]
+    [field: SerializeField] public EventReference wallInTheWay {  get; private set; }
 
     private void Awake()
     {

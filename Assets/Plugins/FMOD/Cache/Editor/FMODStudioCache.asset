@@ -15,11 +15,38 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Sfx.bank
   Name: Sfx
   StudioPath: bank:/Sfx
-  lastModified: 638640824590166486
+  lastModified: 638640882808733811
   FileSizes:
   - Name: Desktop
-    Value: 25472
+    Value: 38016
   Exists: 1
+--- !u!114 &-1826191069995411748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/RightPath
+  m_EditorClassIdentifier: 
+  Path: event:/RightPath
+  Guid:
+    Data1: 1227732791
+    Data2: 1084466178
+    Data3: 1004297916
+    Data4: -1657608006
+  Banks:
+  - {fileID: -8317918603804052003}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1536
 --- !u!114 &-1052982876519717108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -64,16 +91,17 @@ MonoBehaviour:
   - {fileID: 5496830274024639889}
   - {fileID: -8317918603804052003}
   EditorEvents:
-  - {fileID: 484132146035754211}
   - {fileID: -1052982876519717108}
+  - {fileID: -1826191069995411748}
+  - {fileID: 3250625749118901233}
   EditorParameters: []
   MasterBanks:
   - {fileID: 5496830274024639889}
   StringsBanks:
   - {fileID: 6733699882298954688}
-  cacheTime: 638640824590166486
+  cacheTime: 638640882808733811
   cacheVersion: 131620
---- !u!114 &484132146035754211
+--- !u!114 &3250625749118901233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,14 +111,14 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Right path
+  m_Name: event:/No
   m_EditorClassIdentifier: 
-  Path: event:/Right path
+  Path: event:/No
   Guid:
-    Data1: 1067080139
-    Data2: 1243333819
-    Data3: -461516100
-    Data4: 1732237390
+    Data1: 422753830
+    Data2: 1261420447
+    Data3: -1867439200
+    Data4: -57813274
   Banks:
   - {fileID: -8317918603804052003}
   IsStream: 0
@@ -115,7 +143,7 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638640824589717678
+  lastModified: 638640882808161299
   FileSizes:
   - Name: Desktop
     Value: 1036
@@ -135,8 +163,8 @@ MonoBehaviour:
   Path: ../../Fmod/Unity1/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638640824589727655
+  lastModified: 638640882808161299
   FileSizes:
   - Name: Desktop
-    Value: 862
+    Value: 894
   Exists: 1

@@ -29,11 +29,26 @@ public class PlazerMovement : MonoBehaviour
                 {
                     movePoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                 }
-            }else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
+                if(Physics.CheckBox(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), new Vector3(0.2f, 0.2f, 0.2f), new Quaternion(0f, 0f, 0f, 0f), whatStopsMovement))
+                {
+                    Debug.Log("wall");
+                    AudioManager.instance.PlayOneShot(FmodsEvents.instance.wallInTheWay, this.transform.position);
+     
+                }
+            }
+            else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
+                Debug.Log("Verti");
                 if (!Physics.CheckBox(movePoint.position + new Vector3(0f, 0f, Input.GetAxisRaw("Vertical")), new Vector3(0.2f, 0.2f, 0.2f), new Quaternion(0f, 0f, 0f, 0f), whatStopsMovement))
                 {
                     movePoint.position += new Vector3(0f, 0f, Input.GetAxisRaw("Vertical"));
+                    Debug.Log("nowall");
+                }
+                //if (Physics.CheckBox(movePoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), new Vector3(0.2f, 0.2f, 0.2f), new Quaternion(0f, 0f, 0f, 0f), whatStopsMovement))
+                else{
+                    Debug.Log("wall");
+                    AudioManager.instance.PlayOneShot(FmodsEvents.instance.wallInTheWay, this.transform.position);
+                    
                 }
             }
 

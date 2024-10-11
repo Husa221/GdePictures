@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{5769f2d5-144a-442f-832a-d1ed3633089a}">
+		<property name="assetPath">
+			<value>Character/heartbeat.ogg</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>7.9921541950113379</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{6be93845-3cac-4532-85ec-5d7102d1477f}</destination>
+		</relationship>
+	</object>
+</objects>
